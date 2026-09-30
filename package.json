@@ -1,0 +1,20 @@
+{
+  "name": "monitor-infantil",
+  "version": "0.1.0",
+  "description": "Monitor de acessos dos celulares das crianças via DNS local, com painel web.",
+  "main": "src/main.js",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node src/main.js --dns-port 15353 --no-browser",
+    "test": "node --test \"test/*.test.js\"",
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "postject": "^1.0.0-alpha.6"
+  }
+}
